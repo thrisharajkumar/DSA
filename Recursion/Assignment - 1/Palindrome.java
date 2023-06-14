@@ -3,6 +3,7 @@ package Recursion.Assignment_1;
 public class Palindrome {
 
     static boolean isPalindrome(String s) {
+        //Check if a string is palindrome or not.
         // Terminating case or base case
         if (s.length() <= 1) {
             return true;
