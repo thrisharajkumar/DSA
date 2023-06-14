@@ -2,6 +2,9 @@ package Recursion.Assignment_1;
 
 public class CountZeros {
     static int CountZeroLoop1(int n) {
+        Count zeros in a number - Try yourself
+i/p : 430203005
+o/p : 4
         int count = 0;
         // converting thenumber to a String
 
