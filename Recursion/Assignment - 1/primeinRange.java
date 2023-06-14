@@ -1,7 +1,7 @@
 package Recursion.Assignment_1;
 
 public class primeinRange {
-
+    //Generate all prime numbers in a given range.
     public static int CountPrimeInRange(int start, int end) {
         if (start > end) {
             return 0;
