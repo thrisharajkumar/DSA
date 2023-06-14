@@ -1,6 +1,10 @@
 package Recursion.Assignment_1;
 
 public class CountDigits {
+    
+    Count digits in a number
+i/p : 43235
+o/p : 5
 
     static int countLoop(int n) {
         int count = 0;
