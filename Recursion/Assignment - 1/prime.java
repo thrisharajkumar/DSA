@@ -1,6 +1,7 @@
 package Recursion.Assignment_1;
 
 public class prime {
+    //Check the given number is Prime Number or not.
     static boolean isprime(int n) {
         if (n <= 1) {
             return false;
