@@ -1,0 +1,36 @@
+public class OddElementInArray {
+    /*
+     * Odd Element in array
+     * i/p : arr[] = {1,1,2,2,3,3,4,5,5,6,6};
+     * o/p : 4
+     */
+
+    // ^ -- XOR
+
+    // int ans = 0;
+    // ans ^ arr[0] --> 1
+    // ans ^ arr[1] --> 0
+    // ans ^ arr[2] --> 2
+    // ans ^ arr[3] --> 0
+    // ans ^ arr[4] --> 3
+    // ans ^ arr[5] --> 7
+    // ans ^ arr[6] --> 3
+    // ans ^ arr[7] --> 6
+    // ans ^ arr[8] --> 3
+
+    static void solution(int arr[]) {
+        // XOR Approach
+        // IF DIFF - 1
+        // IF SAME - 0
+        int ans = 0;
+        for (int i = 0; i < arr.length; i++) {
+            ans = ans ^ arr[i];
+        }
+
+    }
+
+    public static void main(String[] args) {
+        int arr[] = { 1, 1, 2, 2, 3, 3, 4, 5, 5, 6, 6 };
+        solution(arr);
+    }
+}
