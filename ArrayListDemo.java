@@ -40,6 +40,9 @@ public class ArrayListDemo {
         // Method - 3
         // it will iterate through the ArrayList
         // a element will contain the each index value
+        // For each specifies iteration
+
+        // LAMDA EXPRESSION
         list.forEach((a) -> System.out.println(a));
 
     }
