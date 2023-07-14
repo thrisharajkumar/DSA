@@ -28,8 +28,8 @@ public class AtoI {
         // Char to int
         while (index < n && Character.isDigit(s.charAt(index))) {
             int digit = s.charAt(index) - '0';
-            // if thr range of number is greater than int
-            if (r >= Integer.MAX_VALUE / 10 || (r == Integer.MAX_VALUE / 10 && digit > Integer.MAX_VALUE % 10)) {
+            // if the range of number is greater than int
+            if (r > Integer.MAX_VALUE / 10 || (r == Integer.MAX_VALUE / 10 && digit > Integer.MAX_VALUE % 10)) {
                 return sign == 1 ? Integer.MAX_VALUE : Integer.MIN_VALUE;
             } else {
                 if (r <= Integer.MIN_VALUE / 10) {
