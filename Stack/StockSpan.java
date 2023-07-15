@@ -1,5 +1,7 @@
 package Stack;
 
+import java.util.Stack;
+
 public class StockSpan {
     static int[] func(int[] prices) {
         int n = prices.length;
@@ -17,6 +19,23 @@ public class StockSpan {
 
         }
         return ans;
+    }
+
+    static int[] func_2(int[] prices) {
+        int n = prices.length;
+        int ans[] = new int[n];
+        Stack<Integer> stack = new Stack<>();
+
+        for (int i = 0; i < n; i++) {
+            while (!stack.isEmpty() && prices[stack.peek()] <= prices[i]) {
+                stack.pop();
+            }
+            ans[i] = stack.isEmpty() ? i + 1 : i - stack.peek();
+            stack.push(i);
+
+        }
+        return ans;
+
     }
 
     public static void main(String[] args) {
