@@ -1,0 +1,20 @@
+2D Array
+//how to store the values in 2D array
+
+int x[][] = new int[3][3];
+int []x[] = new int[3][3];
+int [][]x = new int[3][3];
+
+Access data from 2D Array
+- row major
+- cloumn major
+
+Types of matrixes
+1. Square matrix
+where i=j
+2. Symmetric matrix
+where a[i][j] = a[j][i]
+3. Tridiagonal matrix
+4. Z matrix
+5. Toeplitz matrix
+
