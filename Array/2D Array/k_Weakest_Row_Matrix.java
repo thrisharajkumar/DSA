@@ -29,7 +29,7 @@ public class k_Weakest_Row_Matrix {
         int pairs[][] = new int[m][2];
         for (int i = 0; i < m; i++) {
             int strength = 0;
-            for (int j = 0; j < m; j++) {
+            for (int j = 0; j < n; j++) {
                 if (mat[i][j] == 0) {
                     break;
                 }
@@ -55,6 +55,8 @@ public class k_Weakest_Row_Matrix {
          * by the specified comparator (that is, c.compare(e1, e2) must not throw a
          * ClassCastException for any elements e1 and e2 in the array).
          */
+        // Sort the 2D array based on the number of non-zero elements (column 0) and
+        // index (column 1)
 
         Arrays.sort(pairs, (a, b) -> {
             if (a[0] == b[0])
