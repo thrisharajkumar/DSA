@@ -1,4 +1,3 @@
-package Recursion.Assignment;
 
 public class Armstrong {
     public static boolean isAmrstrong(int n) {
